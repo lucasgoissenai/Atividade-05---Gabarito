@@ -7,11 +7,11 @@ programa
 	funcao inicio()
 	{
 	real num1,num2
-	const cadeia caminho="C:/Users/Aluno/Desktop/arquivo calc.txt"
+	const cadeia caminho="C:/Users/Aluno/Documents/Atividade-05---Gabarito/calculadora.txt"
 	inteiro arquivo=a.abrir_arquivo(caminho,a.MODO_LEITURA)
-	num1=t.cadeia_para_real(a.ler_linha(arquivo))
+	num1 = t.cadeia_para_real(a.ler_linha(arquivo))
 	a.fechar_arquivo(arquivo)
-	cadeia  textoLinha=" "
+	cadeia  textoLinha = " "
 	inteiro opcao
 	titulo()
 	menu()
@@ -101,7 +101,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 207; 
+ * @POSICAO-CURSOR = 216; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
