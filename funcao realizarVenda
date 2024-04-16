@@ -1,0 +1,22 @@
+funcao vazio realizarVenda(cadeia produto[][], inteiro estoque[], real produto1[][], real &totalVendas, real &totalLucro, real &percentualLucro){
+
+    cadeia codigoProduto
+    inteiro quantidadeVendida
+    escreva("Digite o código do produto que deseja vender: ")
+    leia(codigoProduto)
+    escreva("Digite a quantidade que deseja vender: ")
+    leia(quantidadeVendida)
+    para(inteiro i=0; i<3; i++){
+        se(produto[i][4]==codigoProduto){
+            se(estoque[i]>=quantidadeVendida){
+                estoque[i] -= quantidadeVendida
+                totalVendas += quantidadeVendida * produto1[i][0]
+                totalLucro += quantidadeVendida * (produto1[i][0] - produto1[i][1])
+                percentualLucro = (totalLucro / totalVendas) * 100
+            }senao{
+                escreva("Estoque insuficiente para realizar a venda.")
+            }
+        }
+        escreva("Percentualde lucros",percentualLucro)
+    }
+}
